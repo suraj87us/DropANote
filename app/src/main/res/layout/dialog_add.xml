@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Note"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/margin_dialog"
+        android:textSize="@dimen/dialog_textSize"/>
+
+
+   <!-- <ImageButton
+        android:id="@+id/img_button"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_alignBottom="@+id/tv_title"
+        android:src="@drawable/ic_close"
+        android:background="@null"
+        android:layout_marginRight="15dp"
+        />-->
+
+    <View
+        android:layout_above="@+id/editText_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_dialog"
+        android:layout_below="@+id/tv_title"
+        android:hint="@string/edittext_hint"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_edittext_border"/>
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/editText_dialog">
+
+    </DatePicker>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:layout_alignBottom="@+id/datePicker"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:layout_below="@+id/datePicker"
+            android:layout_margin="15dp"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_add_color"
+            android:background="@drawable/bg_btn_add"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel"
+            android:layout_toLeftOf="@+id/btn_addnote"
+            android:layout_margin="15dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_add_color"
+            android:background="@drawable/bg_btn_add"
+            android:layout_alignTop="@+id/btn_addnote"/>
+    </LinearLayout>
+</LinearLayout>

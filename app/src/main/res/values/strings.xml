@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Drop a Note</string>
     <string name="str_drop_a_note">Drop a Note</string>
+    <string name="edittext_hint">What is it?</string>
 </resources>

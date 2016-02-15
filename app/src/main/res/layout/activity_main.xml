@@ -5,13 +5,20 @@
     android:layout_height="match_parent"
     tools:context="com.giyer7.dropanote.ActivityMain">
 
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar"/>
-    <ImageView
-        android:id="@+id/img_background"
+
+    <com.giyer7.dropanote.widgets.NoteRecyclerView
+        android:id="@+id/recyclerview"
         android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-    <include layout="@layout/empty_note"/>
+
+    <include android:id="@+id/emptyset" layout="@layout/empty_note"/>
 </RelativeLayout>
